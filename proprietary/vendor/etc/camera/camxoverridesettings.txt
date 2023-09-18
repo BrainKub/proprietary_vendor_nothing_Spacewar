@@ -18,4 +18,4 @@ logWarningMask=0x75ffffff
 FAECLuxIndexThresholdForLLHDR=180
 FAECLuxIndexThresholdForSuperNight=310
 FAECLuxIndexThresholdForDarkVision=455
-
+SOISSensorSamplingRate=500
