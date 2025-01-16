@@ -1004,80 +1004,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libAlacSwDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libAlacSwDec.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libAlacSwDec.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libApeSwDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libApeSwDec.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libApeSwDec.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libC2D2",
     owner: "nothing",
     strip: {
@@ -1167,488 +1093,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapperextensions@1.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMpeghSwEnc",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMpeghSwEnc.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libMpeghSwEnc.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxAacDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxAacDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxAacDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxAlacDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxAlacDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxAlacDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxAlacDecSw",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxAlacDecSw.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxAlacDecSw.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxAmrwbplusDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxAmrwbplusDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxAmrwbplusDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxApeDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxApeDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxApeDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxApeDecSw",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxApeDecSw.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxApeDecSw.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxEvrcDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxEvrcDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxEvrcDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxG711Dec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxG711Dec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxG711Dec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxMpeghEncSw",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxMpeghEncSw.so",
-            ],
-            shared_libs: [
-                "libMpeghSwEnc",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxMpeghEncSw.so",
-            ],
-            shared_libs: [
-                "libMpeghSwEnc",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxQcelp13Dec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxQcelp13Dec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxQcelp13Dec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxWmaDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxWmaDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libOmxWmaDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libion",
                 "libc++",
                 "libc",
                 "libm",
@@ -7052,8 +6496,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.primary.lahaina_Spacewar",
-    stem: "audio.primary.lahaina",
+    name: "audio.primary.lahaina",
     owner: "nothing",
     strip: {
         none: true,
@@ -7121,92 +6564,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libOmxDsdDec",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxDsdDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxMpeghDecSw",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxMpeghDecSw.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libOmxVideoDSMode",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libOmxVideoDSMode.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libmmosal_vendor",
-                "libutils",
-                "libwfdcommonutils_proprietary",
-                "libwfdmmservice_proprietary",
-                "libbinder",
-                "libwfdutils_proprietary",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "lib_lvacfs",
     owner: "nothing",
     strip: {
@@ -7232,8 +6589,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liba2dpoffload_Spacewar",
-    stem: "liba2dpoffload",
+    name: "liba2dpoffload",
     owner: "nothing",
     strip: {
         none: true,
@@ -7372,6 +6728,75 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libbatterylistener",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbatterylistener.so",
+            ],
+            shared_libs: [
+                "android.hardware.health@1.0",
+                "android.hardware.health@2.0",
+                "android.hardware.power@1.2",
+                "libaudioroute",
+                "libaudioutils",
+                "libbase",
+                "libcutils",
+                "libexpat",
+                "libhidlbase",
+                "liblog",
+                "libtinyalsa",
+                "libtinycompress",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcomprcapture",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcomprcapture.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudioroute",
+                "libexpat",
+                "libaudio_log_utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcppf",
     owner: "nothing",
     strip: {
@@ -7422,7 +6847,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdsd2pcm",
+    name: "libexthwplugin",
     owner: "nothing",
     strip: {
         none: true,
@@ -7430,10 +6855,48 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libdsd2pcm.so",
+                "proprietary/vendor/lib/libexthwplugin.so",
             ],
             shared_libs: [
+                "libaudioroute",
+                "libaudioutils",
+                "libcutils",
+                "libexpat",
                 "liblog",
+                "libtinyalsa",
+                "libtinycompress",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhdmiedid",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libhdmiedid.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudioroute",
+                "libexpat",
+                "libaudio_log_utils",
                 "libc++",
                 "libc",
                 "libm",
@@ -7459,6 +6922,38 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libaudioparsers",
+                "libaudioroute",
+                "libaudioutils",
+                "libcutils",
+                "libexpat",
+                "liblog",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudio_log_utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhfp",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libhfp.so",
+            ],
+            shared_libs: [
                 "libaudioroute",
                 "libaudioutils",
                 "libcutils",
@@ -7588,8 +7083,71 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libssrec_Spacewar",
-    stem: "libssrec",
+    name: "libsndmonitor",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsndmonitor.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudioroute",
+                "libexpat",
+                "libaudio_log_utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libspkrprot",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libspkrprot.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudioroute",
+                "libexpat",
+                "libaudio_log_utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libssrec",
     owner: "nothing",
     strip: {
         none: true,
@@ -20696,34 +20254,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.radio.atcmdfwd@1.0",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.radio.ims@1.0",
     owner: "nothing",
     strip: {
@@ -24974,44 +24504,6 @@ prebuilt_etc_xml {
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ATFWD-daemon",
-    owner: "nothing",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/ATFWD-daemon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libqmi_cci",
-                "libqmi",
-                "libmdmdetect",
-                "libqmi_client_qmux",
-                "libqmi_client_helper",
-                "libqmiservices",
-                "liblog",
-                "libavservices_minijail",
-                "libqmi_common_so",
-                "libbase",
-                "libhidlbase",
-                "vendor.qti.hardware.radio.atcmdfwd@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 

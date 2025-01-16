@@ -308,18 +308,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Spacewar/proprietary/vendor/etc/lvacfs_params/4mic/audiozoom_13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/4mic/audiozoom_13.txt \
     vendor/nothing/Spacewar/proprietary/vendor/etc/lvacfs_params/4mic/audiozoom_4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lvacfs_params/4mic/audiozoom_4.txt \
     vendor/nothing/Spacewar/proprietary/vendor/etc/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media/video_system_specs.json \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_codecs_performance_yupik_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v0.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_codecs_performance_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v1.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_codecs_yupik_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v0.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_codecs_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v1.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_profiles_yupik_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_yupik_v0.xml \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/media_profiles_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_yupik_v1.xml \
     vendor/nothing/Spacewar/proprietary/vendor/etc/media_yupik_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v1/video_system_specs.json \
     vendor/nothing/Spacewar/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     vendor/nothing/Spacewar/proprietary/vendor/etc/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
@@ -355,7 +343,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Spacewar/proprietary/vendor/etc/qdcm_calib_data_rm692e5_amoled_fhd+_120hz_cmd_mode_dsi_visionox_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm692e5_amoled_fhd+_120hz_cmd_mode_dsi_visionox_panel.xml \
     vendor/nothing/Spacewar/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/nothing/Spacewar/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
-    vendor/nothing/Spacewar/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/nothing/Spacewar/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/nothing/Spacewar/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/nothing/Spacewar/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
@@ -636,22 +623,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vulkan.adreno \
-    libAlacSwDec \
-    libApeSwDec \
     libC2D2 \
     libCB \
-    libMpeghSwEnc \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAlacDecSw \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxApeDecSw \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxMpeghEncSw \
-    libOmxQcelp13Dec \
-    libOmxWmaDec \
     libOpenCL \
     libQSEEComAPI \
     libacdb-fts \
@@ -775,26 +748,29 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@2.0 \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.qspmhal@1.0 \
-    audio.primary.lahaina_Spacewar \
+    audio.primary.lahaina \
     libFileMux_proprietary \
-    libOmxDsdDec \
-    libOmxMpeghDecSw \
-    libOmxVideoDSMode \
     lib_lvacfs \
-    liba2dpoffload_Spacewar \
+    liba2dpoffload \
     libadm \
     libaudio_log_utils \
     libaudioconfigstore \
     libaudioparsers \
+    libbatterylistener \
+    libcomprcapture \
     libcppf \
     libdrc \
-    libdsd2pcm \
+    libexthwplugin \
+    libhdmiedid \
     libhdmipassthru \
+    libhfp \
     liblvacfs_wrapper \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
     libqtigef \
-    libssrec_Spacewar \
+    libsndmonitor \
+    libspkrprot \
+    libssrec \
     libsurround_3mic_proc \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
@@ -1168,7 +1144,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
-    vendor.qti.hardware.radio.atcmdfwd@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
     vendor.qti.hardware.radio.ims@1.1 \
     vendor.qti.hardware.radio.ims@1.2 \
@@ -1329,7 +1304,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.qti.gnss@4.3-service.xml \
     vendor.qti.hardware.limits@1.0-service.xml \
-    ATFWD-daemon \
     adpl \
     adsprpcd \
     cdsprpcd \
